@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="IDExplorer.actions"
+            label="IDExplorer.actions"
+            visible="true">
+            <action
+               class="com.again.idexplorer.actions.OpenEclipseHomeAction"
+               definitionId="IDExplorer.commands.OpenEclipseHome"
+               id="IDExplorer.actions.OpenEclipseHome"
+               label="Open Eclipse Home"
+               menubarPath="file/IDExplorer.menu/additions"
+               style="push">
+         </action>
+         <action
+               class="com.again.idexplorer.actions.OpenWorkspaceAction"
+               definitionId="IDExplorer.commands.OpenWorkspace"
+               id="IDExplorer.actions.OpenWorkspace"
+               label="Open Workspace"
+               menubarPath="file/IDExplorer.menu/additions"
+               style="push">
+         </action>
+         <menu
+               id="IDExplorer.menu"
+               label="Open Explorer"
+               path="file/group.file">
+         </menu>
+      </actionSet>
+   </extension>
+<extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="IDExplorer.commands.OpenEclipseHome"
+            name="Open Eclipse Home">
+      </command>
+      <command
+            id="IDExplorer.commands.OpenWorkspace"
+            name="Open Workspace">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="IDExplorer.commands.OpenEclipseHome"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+E">
+      </key>
+      <key
+            commandId="IDExplorer.commands.OpenWorkspace"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+W">
+      </key>
+   </extension>
+</plugin>

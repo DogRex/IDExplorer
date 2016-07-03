@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: IDExplorer
+Bundle-SymbolicName: IDExplorer;singleton:=true
+Bundle-Version: 1.0.1
+Bundle-Activator: com.again.idexplorer.Activator
+Bundle-Vendor: Again
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.jdt.core,
+ org.eclipse.jface.text
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
