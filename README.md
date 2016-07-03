@@ -1,0 +1,2 @@
+# IDExplorer
+一个简单的Eclipse插件，可以快速打开Eclipse家目录和Workspace目录
